@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Interactive</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="form-register">
+      <h1>Registration Form</h1>
+      <form action="#" method="POST" autocomplete="off">
+        <div class="form-group">
+          <label for="name" class="required">Display Name:</label>
+          <input
+            class="name"
+            type="text"
+            placeholder="Enter Full Name..."
+            spellcheck="false"
+            required
+            id="name"
+            />
+        </div>
+        <div class="form-group">
+          <label for="email" class="required">Email:</label>
+          <input
+            class="email"
+            type="email"
+            placeholder="Enter Email..."
+            spellcheck="false"
+            required
+            id="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telephone" class="required">Phone Number:</label>
+          <input
+            class="telephone"
+            type="tel"
+            placeholder="Enter Phone Number..."
+            spellcheck="false"
+            required
+            id="telephone"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password" class="required">Password:</label>
+          <input
+            class="password"
+            type="password"
+            placeholder="Enter Password..."
+            required
+            id="password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password" class="required">Confirm Password:</label>
+          <input
+            class="confirm-password"
+            type="password"
+            placeholder="ReEnter Password..."
+            required
+            id="confirm-password"
+          />
+        </div>
+        <div class="form-group-gender">
+          <label class="gender" for="">Gender: </label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="form-group">
+          <label for="date">Date of Birth:</label>
+          <input type="date" name="" id="date" />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input
+            class="address"
+            type="text"
+            name=""
+            placeholder="Enter Address..."
+            spellcheck="false"
+            id="address"
+          />
+        </div>
+        <div class="form-group-avatar">
+          <label for="avatar">Profile Picture (Avatar)</label>
+          <label>
+            <img
+              class="avatar-img"
+              src="./img/img-avatar-placeholder.jpg"
+              alt=""
+            />
+            <input hidden type="file" name="" accept="image/*" />
+          </label>
+        </div>
+        <div class="form-group-check">
+          <label for="">Communication Preferences:</label>
+          <div>
+            <input
+              type="checkbox"
+              name="communication"
+              value="newsletter"
+              checked
+              id="newsletter"
+            />
+            <label class="newsletter" for="newsletter">Subscribe to Newsletter</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="communication"
+              value="promotional-emails"
+              id="promotional-emails"
+            />
+            <label class="promotional-emails" for="promotional-emails"
+              >Receive Promotional Emails</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="communication"
+              value="product-updates"
+              id="product-updates"
+            />
+            <label class="product-updates" for="product-updates">Get Product Updates</label>
+          </div>
+        </div>
+        <div class="form-group-submit">
+          <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>

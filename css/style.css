@@ -51,3 +51,106 @@ nav li a:hover {
 nav li a:active {
   color: #ccc;
 }
+
+/*---------- FORM ----------*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+.form-register {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 12px;
+  color: #fff;
+  background: #463ac9;
+}
+
+.form-register h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.form-register input:focus {
+  border: 4px solid #333;
+}
+
+.form-register input:user-invalid {
+  border: 2px solid red;
+}
+
+form {
+  padding: 40px 50px;
+}
+
+.form-group:focus-within label {
+  font-weight: 800;
+}
+
+form label {
+  display: block;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+form label.required::after {
+  content: "*";
+  color: red;
+  margin-left: 2px;
+}
+
+.name,
+.email,
+.telephone,
+.password,
+.confirm-password,
+.address {
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.form-group-gender label,
+.newsletter,
+.promotional-emails,
+.product-updates {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.form-group-gender .gender {
+  font-weight: 500;
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form-group-submit {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-group-submit button {
+  padding: 10px;
+  background-color: cadetblue;
+}
+
+.form-group-submit button:hover {
+  opacity: 0.8;
+}
+
+.form-group-submit button:active {
+  color: white;
+}
