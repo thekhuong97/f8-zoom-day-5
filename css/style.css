@@ -194,17 +194,18 @@ form label.required::after {
   background-color: #f6fcff;
 }
 
+.pricing-card:nth-child(2) {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 .pricing-card:hover {
   -webkit-box-shadow: 10px 10px 15px -3px rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
-.pricing-card:nth-child(2) {
-  border: 2px solid #1b252f;
-}
-
 .pricing-card ~ .pricing-card {
-  margin-left: 12px;
+  margin-left: 20px;
 }
 
 .card-content {
